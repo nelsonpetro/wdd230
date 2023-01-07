@@ -3,15 +3,11 @@
 body{
     margin: 30px auto;
     font-family: 'Fira Code', monospace;
+    max-width: 600px;
 }
 
 header{
     text-align: center;
-}
-
-.content{
-    margin: 0 auto;
-    max-width: 600px;
 }
 
 .banner{
