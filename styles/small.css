@@ -10,27 +10,41 @@ header{
     text-align: center;
 }
 
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 10px auto;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
 .banner{
-    border-radius: 15px;
     display: flex;
-    flex-direction: row;
-    gap: 60px;
-    padding: 20px;
+    flex-direction: column;
+    padding: 10px;
     align-items: center;
     color: white;
     background-color: black;
-    box-shadow: 10px 10px 5px gray;
 }
 
 .img-container{
-    width: 30%;
-    text-align: left;
+    width: auto;
+    text-align: center;
 }
 
 .img-container img{
+    margin-top: 10px;
     border: 3px solid white;
     width: 120px;
     border-radius: 15px;
+}
+
+.main-list{
+    text-align: center;
+    list-style-position: inside;
 }
 
 .main-list li{
@@ -43,6 +57,7 @@ header{
 }
 
 .acclaration{
+    text-align: center;
     font-style: italic;
 }
 
@@ -52,11 +67,9 @@ header{
 
 footer{
     font-weight: 600;
-    margin-top: 50px;
-    border-radius: 15px;
+    margin-top: 20px;
     color: white;
     background-color: black;
     padding: 15px;
     text-align: center;
-    box-shadow: 10px 10px 5px gray;
 }
