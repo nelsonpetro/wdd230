@@ -1,0 +1,29 @@
+@media all and (max-width: 640px){
+    
+    body{
+        font-size: 12px;
+    }
+
+    header{
+        margin-bottom: 20px;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        grid-gap: 10px;
+    }
+    
+    .card1, .card2, .card3{
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    footer{
+        
+        margin-top: 20px;
+        
+    }
+}
