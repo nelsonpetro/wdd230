@@ -1,0 +1,53 @@
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
+*/
+
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main .purpose{
+    text-align: center;
+    margin: 2em auto;
+    width: min(800px,80%);
+    border: #03186B 3px solid;
+    padding: 1.5rem;
+}
+
+.hline{
+    margin-bottom: 1.5rem;
+    height: 2px;
+    background-color: #03186B;
+    border: #03186B;
+}
+
+main .purpose h1{
+    text-align: center;
+    color: #03186B;
+}
+
+main .purpose h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+main .purpose p{
+    font-family: 'Montserrat', sans-serif;
+    color: #03186B;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em){
+    main .purpose{
+        width: 600px;
+        padding: 2rem;
+    }
+
+    main .purpose p{
+        font-size: 1.2em;
+    }
+}

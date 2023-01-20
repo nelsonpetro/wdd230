@@ -1,0 +1,84 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
+*/
+
+main section{
+    margin-top: 2em;
+    margin: 0 auto;
+    width: min(700px, 90%);
+    text-align: center;
+    padding: 1em;
+}
+
+main section h2{
+    font-family: 'Roboto', sans-serif;
+    color: #03186B;
+}
+
+main section, main h2, main h3, main p{
+    padding: 1em;
+}
+
+
+
+.colors {
+    width: min(700px, 90%);
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+.colors th {
+    background-color: #999;
+}
+.colors td{
+    width: 25%;
+    height: 3em;
+}
+.primary{
+    background-color: #03186B;
+    color: white;
+}
+
+.secondary{
+    background-color: #028ED9;
+    color: white;
+}
+
+.accent1{
+    background-color: #2A3038;
+    color: white;
+}
+
+.accent2{
+    background-color: #C74246;
+    color: white;
+}
+
+.hline{
+    margin-bottom: 1.5rem;
+    height: 2px;
+    background-color: #03186B;
+    border: #03186B;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.heading{
+    font-family: 'Roboto', sans-serif;
+}
+
+.para{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.colorpara{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #03186B;
+    color: white;
+}
