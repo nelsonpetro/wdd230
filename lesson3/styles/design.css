@@ -17,7 +17,7 @@ main section h2{
     color: #03186B;
 }
 
-main section, main h2, main h3, main p{
+main section, main h3, main p{
     padding: 1em;
 }
 
