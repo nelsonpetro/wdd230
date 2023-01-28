@@ -91,10 +91,11 @@ nav ul li a:hover{
 
 .social-media .social {
     padding: .5rem;
+    font-size: 1.5em;
 }
 
-.social-media .social{
-    font-size: 1.5em;
+.social-media a{
+    color: #0084a8;
 }
 
 .hero, .event, .news, .weather, .spotlight, .join{
