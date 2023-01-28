@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+header{
+    background-color: #eff4f7;
+    color:  #0084a8;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    width: min(30vw, 170px);
+}
+
+.headings{
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1, .headings h3{
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.sub{
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-style: italic;
+}
+
+nav{
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+nav button{
+    margin: 0.8rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #0084a8;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #0084a8;
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #0084a8;
+    border-top: 1px solid #0084a8;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover{
+    background-color: #0084a8;
+    color: #eff4f7;
+}
+
+.social-media {
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media .social {
+    padding: .5rem;
+}
+
+.social-media .social{
+    font-size: 1.5em;
+}
+
+.hero, .event, .news, .weather, .spotlight, .join{
+    background-color: #eff4f7;
+    height: 30vh;
+    border: 1px solid #0084a8;
+    margin: 1em 0 1em 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.spotlight-container{
+    background-color: #eff4f7;
+    padding: 10px;
+    margin: 1em 0 1em 0;
+    border: 1px solid #0084a8;
+}
+
+.sp3 {
+    display: none;
+}
+
+.join {
+    display: none;
+}
+
+footer{
+    background-color: #0084a8;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #eff4f7;;
+}
+
+footer a{
+    color: #eff4f7;
+    text-decoration: none;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer .contact{
+    padding: 8px;
+    text-align: center;
+}
+
+.h-line{
+    width: 100%;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#hamburgerbtn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+#hamburgerbtn span:nth-child(1) {
+    display: block;
+}
+#hamburgerbtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerbtn.open span:nth-child(1) {
+    display: none;
+}
+#hamburgerbtn.open span:nth-child(2) {
+    display: block;
+}
