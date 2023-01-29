@@ -17,7 +17,7 @@ body{
 
 header{
     background-color: #eff4f7;
-    color:  #0084a8;
+    color:  #1C425C;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@ nav ul li a{
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color: #0084a8;
+    color: #1C425C;
     border-top: 1px solid #0084a8;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -95,13 +95,13 @@ nav ul li a:hover{
 }
 
 .social-media a{
-    color: #0084a8;
+    color: #1C425C;
 }
 
 .hero, .event, .news, .weather, .spotlight, .join{
     background-color: #eff4f7;
     height: 30vh;
-    border: 1px solid #0084a8;
+    border: 1px solid #1C425C;
     margin: 1em 0 1em 0;
     font-family: 'Roboto', sans-serif;
 }
