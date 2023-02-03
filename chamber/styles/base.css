@@ -119,7 +119,7 @@ nav ul li a:hover{
 }
 
 .hero {
-    background-image: url("/chamber/images/city.webp");
+    background-image: url("../images/city.webp");
     background-size: cover;
     background-position: center;
     position: relative;
