@@ -23,6 +23,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 1px solid #1C425C;
 }
 
 .logo{
@@ -45,6 +46,24 @@ header{
     text-align: center;
     font-family: 'Saira Condensed', sans-serif;
     font-style: italic;
+}
+
+#currentdate {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.datecontainer {
+    background-color: #0084a8;
+    margin-top: 1em;
+    text-align: center;
+    padding: 1em;
+    margin: 10px 10px 0 10px;
+    border: 1px solid #1C425C;
 }
 
 nav{
@@ -128,7 +147,8 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #eff4f7;;
+    color: #eff4f7;
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer a{
@@ -175,3 +195,4 @@ nav ul.open {
 #hamburgerbtn.open span:nth-child(2) {
     display: block;
 }
+
