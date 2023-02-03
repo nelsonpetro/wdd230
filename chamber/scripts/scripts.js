@@ -38,6 +38,6 @@ try {
 	console.log("Error with code or your browser does not support Locale");
 }
 
-if (new Date().getDay() === 2 || new Date().getDay() === 3) {
+if (new Date().getDay() === 1 || new Date().getDay() === 2) {
 	document.querySelector(".banner").style.display = "flex";
 }
