@@ -127,8 +127,8 @@ nav ul li a:hover{
 
 .join-button-hero {
     position: absolute;
-    right: 3vw;
-    bottom: 3vw;
+    right: 4vw;
+    bottom: 5vw;
     transition: all .2s ease-in-out;
 }
 
@@ -234,8 +234,8 @@ main p, main h4{
 
 .join a, .join-button-hero a{
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 1.5em;
-    padding: .5em 2.5em;
+    font-size: 2em;
+    padding: .5rem 2.5rem;
     text-align: center;
     background-color: #f36744;
     text-decoration: none;
