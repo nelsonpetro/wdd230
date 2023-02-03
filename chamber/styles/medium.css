@@ -48,9 +48,13 @@
     }
 
     .join {
-        display: block;
+        display: flex;
         grid-column: 1/4;
         grid-row: 4/5;
+    }
+
+    .join img{
+        max-width: 20%;
     }
 
     .event {
