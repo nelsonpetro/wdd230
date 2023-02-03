@@ -132,6 +132,23 @@ nav ul li a:hover{
     transition: all .2s ease-in-out;
 }
 
+.banner {
+    background-image: url("../images/banner.jpg");
+    min-height: 20vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;    
+}
+
+.banner h1 {
+    margin: 0;
+    text-shadow: 2px 2px #1C425C;
+}
+
+
 .join-button-hero:hover {
     transform: scale(1.1);
 }
