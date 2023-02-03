@@ -35,11 +35,15 @@ header{
     flex-direction: column;
 }
 
-.headings h1, .headings h3{
+.headings h2, .headings h3{
     font-family: 'Saira Condensed', sans-serif;
     margin: 0;
     text-align: center;
     letter-spacing: 0.1em;
+}
+
+.headings h2 {
+    font-size: 2em;
 }
 
 .sub{
