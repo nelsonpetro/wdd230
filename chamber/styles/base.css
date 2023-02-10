@@ -118,6 +118,10 @@ nav ul li a:hover{
     font-size: 1.5em;
 }
 
+.social-media img{
+    width: 30px;
+}
+
 .social-media a{
     color: #1C425C;
 }
@@ -305,6 +309,10 @@ footer p{
 footer .contact{
     padding: 8px;
     text-align: center;
+}
+
+footer .contact img{
+    width: 20px;
 }
 
 .h-line{
