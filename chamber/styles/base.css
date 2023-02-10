@@ -178,6 +178,24 @@ nav ul li a:hover{
     color: #1C425C;
 }
 
+.weather {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather p{
+    font-weight: 700;
+}
+
+
+.weather .icon-desc {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .event {
     display: flex;
     flex-direction: column;
