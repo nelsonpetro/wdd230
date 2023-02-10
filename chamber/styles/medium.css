@@ -89,4 +89,12 @@
         background-image: url("../images/medium.jpg");
    
     }
+
+    .join a, .join-button-hero a{
+        font-size: 2em;
+    }
+
+    .hero h4 {
+        font-size: 2.5em;
+    }
 }
