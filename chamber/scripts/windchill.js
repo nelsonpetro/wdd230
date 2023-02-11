@@ -8,7 +8,9 @@ const currentWeather = function() {
       description.textContent = data.weather[0].description;
       description.style.fontSize = "1.5em";
       description.style.fontFamily = 'Montserrat';
-      let icon = document.querySelector("#icon");
+      let icon = document.createElement("img");
+      icon.setAttribute("class", "icon");
+      document.querySelector(".icon-desc").appendChild(icon);
       icon.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
       document.querySelector("#temp").textContent = `${data.main.temp} °F`;
       document.querySelector("#humidity").textContent = `${data.main.humidity}%`
@@ -24,6 +26,3 @@ const currentWeather = function() {
 currentWeather();
 
 //windchill factor f = 35.74 + (0.6215*temp) - ((35.75*(windspeed))**0.16) + ((0.4275*(windspeed))**0.16)
-
-
-  
