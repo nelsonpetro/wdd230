@@ -17,7 +17,7 @@ const currentWeather = function() {
       document.querySelector("#wspeed").textContent = `${data.wind.speed} mph`;
       let temp = data.main.temp;
       let wspeed = data.wind.speed;
-      document.querySelector("#wchill").textContent = `${(35.74 + (0.6215*temp) - ((35.75*(wspeed))**0.16) + ((0.4275*(wspeed))**0.16)).toFixed(2)} °F`;
+      document.querySelector("#wchill").textContent = temp > 50 ? "No windchill factor for this temperature" : wspeed < 3 ? "No windchill factor for this wind speed" : `${(35.74 + (0.6215*temp) - (35.75*(wspeed**0.16)) + (0.4275*temp*(wspeed**0.16))).toFixed(2)} °F`;
   }).catch(err => {
     console.log("There is an error");
   });
