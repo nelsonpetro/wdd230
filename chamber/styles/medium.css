@@ -97,4 +97,74 @@
     .hero h4 {
         font-size: 2.5em;
     }
+
+    .demo-info, .city-images{
+        grid-column: 1/4;
+    }
+
+    .embed-map{
+        max-width: 100%;
+        min-height: 70%;
+    }
+
+    .demo-info, .city-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 1em;
+    }
+
+    .city-images {
+        margin-top: 1em;
+    }
+
+    .first {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .second {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third, .fourth {
+        grid-column: 2/3;
+    }
+
+    .third {
+        grid-row: 1/2;
+    }
+
+    .fourth {
+        grid-row: 2/3;
+    }
+
+    .demo-card img, .city-card img {
+        max-width: 25vw;
+    }
+
+    .demo-card {
+        margin: 0;
+    }
+
+    .city-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        border: 3px double #0084a8;
+    }
+
+    .demo-card {
+        border: 3px double #0084a8;
+    }
 }

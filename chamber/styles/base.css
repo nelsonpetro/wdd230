@@ -168,10 +168,10 @@ nav ul li a:hover{
     text-shadow: 4px 4px #1C425C;
 }
 
-.hero, .event, .news, .weather, .spotlight, .join{
+.hero, .event, .news, .weather, .spotlight, .join, .demo-card, .city-card{
     background-color: #eff4f7;
     min-height: 30vh;
-    border: 1px solid #1C425C;
+    border: 2px solid #1C425C;
     margin: 1em 0 1em 0;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
@@ -329,7 +329,7 @@ footer .contact{
     text-align: center;
 }
 
-footer .contact img{
+footer .icon img{
     width: 20px;
 }
 
@@ -362,5 +362,25 @@ nav ul.open {
 }
 #hamburgerbtn.open span:nth-child(2) {
     display: block;
+}
+
+.demo-card, .city-card {
+    text-align: center;
+}
+
+.demo-card img, .city-card img {
+    max-width: 50vw;
+}
+
+.embed-map {
+    max-width: 100%;
+}
+
+.demo-info h2, .city-images h2{
+    font-size: 1.3em;
+}
+
+.demo-card, .city-card {
+    border: 3px double #0084a8;
 }
 
