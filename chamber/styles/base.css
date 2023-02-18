@@ -52,7 +52,7 @@ header{
     font-style: italic;
 }
 
-#currentdate {
+#currentdate, #days-visits {
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -383,4 +383,14 @@ nav ul.open {
 .demo-card, .city-card {
     border: 3px double #0084a8;
 }
+
+img {
+    filter: blur(0em);
+    transition: filter .5s;
+}
+
+img[data-src] {
+    filter: blur(0.1em);
+}
+
 

@@ -41,3 +41,40 @@ try {
 if (new Date().getDay() === 1 || new Date().getDay() === 2) {
 	document.querySelector(".banner").style.display = "flex";
 }
+
+
+const currentDate = new Date();
+
+const lastVisitDate = localStorage.getItem('lastVisitDate');
+
+if (lastVisitDate) {
+  var daysDiff = Math.round((currentDate - new Date(lastVisitDate)) / (1000 * 60 * 60 * 24));
+}
+
+document.querySelector("#days-visits").innerHTML = `Days since your last visit:  ${daysDiff}`;
+
+localStorage.setItem('lastVisitDate', currentDate.toString());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

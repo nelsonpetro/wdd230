@@ -148,7 +148,7 @@
     }
 
     .demo-card img, .city-card img {
-        max-width: 25vw;
+        max-width: 35vw;
     }
 
     .demo-card {
@@ -167,4 +167,14 @@
     .demo-card {
         border: 3px double #0084a8;
     }
+
+    img {
+        transition: transform .3s;
+    }
+    
+    img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 10px #333;
+    }
 }
+
