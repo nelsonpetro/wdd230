@@ -1,33 +1,29 @@
-const images = document.querySelectorAll("img[data-src]");
-
-function preloadImage(image) {
-    image.setAttribute("src", image.getAttribute("data-src"));
-    image.onload = () => {
-      image.removeAttribute("data-src");
-    };
-}
+const images = document.querySelectorAll('img[data-src]');
 
 const imgOptions = {
-    threshold : 0.2,
-    rootMargin : "0px"
+  rootMargin: "0px",
+  threshold: 1
 };
 
+const preLoadImage = image => {
+    image.classList.add('fade-in');
+    image.src = image.dataset.src;
+    image.srcset = image.dataset.srcset;
+}
+
 if ('IntersectionObserver' in window) {
-    const imgObserver = new IntersectionObserver((items, imgObserver) => {
+    const imgObserver = new IntersectionObserver((items, observer) => {
         items.forEach(item => {
             if (item.isIntersecting) {
-                preloadImage(item.target);
-                imgObserver.unobserve(item.target);
+                preLoadImage(item.target);
+                observer.unobserve(item.target);
             }
         });
     }, imgOptions);
-    images.forEach(image => {
-        imgObserver.observe(image);
-    });
+    images.forEach(image => imgObserver.observe(image));
 }else {
-    images.forEach(image => {
-        preloadImage(image);
-    });
+    console.log('%cIntersection Observers not supported', 'color: red');
+    images.forEach(image => preLoadImage(image));
 }
 
 
