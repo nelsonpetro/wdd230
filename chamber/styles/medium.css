@@ -176,5 +176,9 @@
         transform: scale(1.03);
         box-shadow: 0 0 10px #333;
     }
+
+    form {
+        max-width: 80%;
+    }
 }
 

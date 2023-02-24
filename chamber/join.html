@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Chamber of Commerce of Montería and support local businesses. Access valuable resources, networking opportunities, and advocacy to help grow your business and also discover the most importan places in Monteria">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="only screen and (min-width: 37.5rem)">
+    <link rel="stylesheet" href="styles/large.css" media="only screen and (min-width: 64rem)">
+    <link rel="icon" href="images/fav-icon.ico">
+    <title>Discover - Montería - Chamber of Commerce</title>
+    <title>Join</title>
+</head>
+<body>
+    <div class="banner">
+        <h1>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h1>
+    </div>
+    <header id="header">
+        <picture id="pic">
+            <img class="logo" src="images/logo-wname.svg" alt="Montería chamber of commerce - logo">
+        </picture>
+        <section id="head" class="headings">
+            <h2>Montería</h2>
+            <h3>Chamber of Commerce</h3>
+            <div class="sub">Working for the citizens</div>
+        </section>
+        <nav id="navbar">
+    <button id="hamburgerbtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primarynav">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="benefits.html">BENEFITS</a>
+                </li>
+                <li>
+                    <a href="initiatives.html">INITIATIVES</a>
+                </li>
+                <li>
+                    <a href="contactus.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="socmedia" class="social-media">
+            <a href="https://www.facebook.com/" class="social fb" target="_blank">
+                <img src="images/facebook.svg" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com/" class="social tw" target="_blank">
+                <img src="images/twitter.svg" alt="twitter icon">
+            </a>
+            <a href="https://www.instagram.com/" class="social instagram" target="_blank">
+                <img src="images/instagram.svg" alt="instagram icon">
+            </a>
+            <a href="https://www.linkedin.com/" class="social linkedin" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin icon">
+            </a>
+        </div>
+    </header>
+    <div class="datecontainer">
+        <span id="currentdate"></span>
+        <p><span id="days-visits"></span></p>
+    </div>
+    <h1 class="form-title">Montería Chamber of Commerce - Membership Application</h1>
+    <form method="get" action="thankyou.html">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top">First Name*<input type="text" name="fname" required></label>
+            <label class="top">Last Name*<input type="text" name="lname" required></label>
+            <label class="top">Business Position<input type="text" id="pattern" name="title" minlength="7" pattern="^(?=.*[a-zA-Z])[a-zA-Z\s\-]{7,}$"></label>
+            <label class="top">Email address<input type="email" name="email" placeholder="someone@example.com"></label>  
+            <label class="top">Phone<input type="tel" name="phone" placeholder="123456789"></label>  
+        </fieldset>
+
+        <fieldset>
+            <legend>Business Information</legend>
+            <label class="top">Business Name*<input type="text" name="bname" required></label>
+            <div>Membership Level</div>
+            <label class="sbs" data-tooltip = "This membership has no fees"><input type="radio" name="mlevel" value="np"> NP - Non profit organization</label>
+            <label class="sbs" data-tooltip = "This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."><input type="radio" name="mlevel" value="bronze"> Bronze Membership</label>
+            <label class="sbs" data-tooltip = "This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."><input type="radio" name="mlevel" value="silver"> Silver Membership</label>
+            <label class="sbs" data-tooltip = "This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."><input type="radio" name="mlevel" value="gold"> Gold Membership</label>
+            <label class="top">Business Description <textarea name="bdescription" cols="33" rows="10"></textarea></label>
+            <input type="hidden" name="appdate" id="appdate" value="">
+        </fieldset>
+
+        <input type="submit" value="Send My Application" class="submitBtn">
+    </form>
+    <footer>
+        <div class="contact logo-name">
+            <picture>
+                <img class="logo" src="images/logo-white-wname.svg" alt="Montería chamber of commerce - logo">
+            </picture>
+            <section class="headings">
+                <h2>Montería</h2>
+                <h3>Chamber of Commerce</h3>
+                <div class="sub">Working for the citizens</div>            
+            </section>
+        </div>
+        <div class="icon">
+            <a href="https://www.google.com/maps/place/Chamber+of+Commerce/@8.7551558,-75.8861039,17z/data=!4m6!3m5!1s0x8e5a2fe59d5f0a7b:0xfe3793ee6586c9e5!8m2!3d8.7552778!4d-75.8852778!16s%2Fg%2F1tg82j1h" target="_blank">
+                <img src="images/location.svg" alt="location arrow icon">
+                <span>28 St. No. 4 - 61 (Córdoba) Colombia</span>
+            </a>
+        </div>
+        <div class="icon">
+            <img src="images/phone.svg" alt="phone icon">
+            <span>+(57) 311-770-9108</span>
+        </div>
+        <div class="icon">
+            <img src="images/at.svg" alt="at icon">
+            <span>monteriachamber@monteria.gov.co</span>
+        </div>
+        <hr class="h-line">
+        <p>&copy; <span id="currentyear"></span> | Montería Chamber of Commerce | WDD 230 Project | Nelson D. Petro | Colombia | <span id="lastupdated"></span></p>     
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
