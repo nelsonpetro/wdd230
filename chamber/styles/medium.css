@@ -180,5 +180,17 @@
     form {
         max-width: 80%;
     }
+
+    .container {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image {
+        min-width: 400px;
+        max-width: 600px;
+    }
+
 }
 
