@@ -485,7 +485,6 @@ form label.sbs::before {
     color: #fff;
     border-radius: 3px;
     font-size: 14px;
-    white-space: wrap;
 }
 
 form label.sbs:hover::before {
