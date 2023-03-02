@@ -20,7 +20,7 @@ async function getProphetData() {
                 filteredArray = data.prophets;
               break;
             case '1':
-                filteredArray = data.prophets.filter(prophet => prophet.length <= 10);
+                filteredArray = data.prophets.filter(prophet => prophet.length < 10);
               break;
             case '2':
                 filteredArray = data.prophets.filter(prophet => prophet.length >= 10 && prophet.length < 20);
