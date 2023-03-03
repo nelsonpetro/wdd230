@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join the Chamber of Commerce of Montería and support local businesses. Access valuable resources, networking opportunities, and advocacy to help grow your business and also discover the most importan places in Monteria">
+    <meta name="description" content="Join the Chamber of Commerce of Montería and support local businesses. Access valuable resources, networking opportunities, and advocacy to help grow your business">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css" media="only screen and (min-width: 37.5rem)">
     <link rel="stylesheet" href="styles/large.css" media="only screen and (min-width: 64rem)">
     <link rel="icon" href="images/fav-icon.ico">
-    <title>Join - Montería - Chamber of Commerce</title>
+    <title>Montería - Chamber of Commerce</title>
 </head>
 <body>
     <div class="banner">
@@ -64,35 +64,18 @@
         <span id="currentdate"></span>
         <p><span id="days-visits"></span></p>
     </div>
-    <h1 class="form-title">Montería Chamber of Commerce - Membership Application</h1>
-    <form method="get" action="thankyou.html">
-        <fieldset>
-            <legend>Applicant Information</legend>
-            <label class="top">First Name*<input type="text" name="fname" required></label>
-            <label class="top">Last Name*<input type="text" name="lname" required></label>
-            <label class="top">Business Position<input type="text" id="pattern" name="title" minlength="7" pattern="^(?=.*[a-zA-Z])[a-zA-Z\s\-]{7,}$"></label>
-            <label class="top">Email address*<input type="email" name="email" placeholder="someone@example.com" required></label>  
-            <label class="top">Phone*<input type="tel" name="phone" placeholder="123456789" required></label>  
-        </fieldset>
-
-        <fieldset>
-            <legend>Business Information</legend>
-            <label class="top">Business Name*<input type="text" name="bname" required></label>
-            <div>Membership Level</div>
-            <label class="sbs" data-tooltip = "This membership has no fees"><input type="radio" name="mlevel" value="np"> NP - Non profit organization - Free</label>
-            <label class="sbs" data-tooltip = "This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."><input type="radio" name="mlevel" value="bronze"> Bronze Membership - $100</label>
-            <label class="sbs" data-tooltip = "This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."><input type="radio" name="mlevel" value="silver"> Silver Membership - $120</label>
-            <label class="sbs" data-tooltip = "This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."><input type="radio" name="mlevel" value="gold"> Gold Membership - $140</label>
-            <label class="top">Business Description <textarea name="bdescription" cols="33" rows="10" placeholder="Enter a brief description of your business"></textarea></label>
-            <input type="hidden" name="appdate" id="appdate" value="">
-        </fieldset>
-
-        <input type="submit" value="Send My Application" class="submitBtn">
-    </form>
+    <main>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <article class="grid">
+        </article>
+    </main>
     <footer>
-        <div class="contact logo-name">
+        <div class="logo-name">
             <picture>
-                <img class="logo" src="images/logo-white-wname.svg" alt="Montería chamber of commerce - logo">
+                <img id="footer-logo" class="logo" src="images/placeholder300x400.webp" data-src="images/logo-white-wname.svg" alt="Montería chamber of commerce - logo">
             </picture>
             <section class="headings">
                 <h2>Montería</h2>
@@ -118,6 +101,9 @@
         <p>&copy; <span id="currentyear"></span> | Montería Chamber of Commerce | WDD 230 Project | Nelson D. Petro | Colombia | <span id="lastupdated"></span></p>     
     </footer>
     <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/form.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/lazyloadnormal.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </body>
 </html>
+

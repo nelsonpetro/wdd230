@@ -18,7 +18,7 @@
         border: none;
     }
 
-    main {
+    .content {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
     }
@@ -112,5 +112,22 @@
     .image {
         min-width: 600px;
         max-width: 800px;
+    }
+
+    .list section {
+        grid-template-columns:1fr 4fr;
+    }
+
+    .list section img {
+        max-width: 250px;
+        display: block;
+    }
+
+    .infocontainer h2 {
+        font-size: 1.5rem;
+    }
+   
+    .list section p,  .list section a{
+        font-size: 1.2rem;
     }
 }

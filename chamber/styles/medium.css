@@ -26,7 +26,7 @@
         grid-column: 1/4;
     }
 
-    main {
+    .content {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: repeat(3, 1fr);
@@ -192,5 +192,28 @@
         max-width: 600px;
     }
 
+    .grid img{
+        max-width: 300px;
+    }
+
+    .list section {
+        grid-template-columns:1fr;
+        padding: 1rem;
+    }
+
+    .infocontainer h2 {
+        font-size: 1rem;
+    }
+
+    .list .infocontainer {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .list section p,  .list section a{
+        font-size: 1rem;
+    }
 }
 

@@ -212,7 +212,7 @@ nav ul li a:hover{
     color: #1C425C;
 }
 
-main p, main h4{
+.content p, .content h4{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -520,4 +520,92 @@ form label.top input:required:valid {
 .image {
     width: 400px;
     margin: 0 auto;
+}
+
+.grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    font-family: 'Montserrat', sans-serif;
+    place-items: center;
+    grid-gap: 30px;
+}
+
+.grid img{
+    margin-bottom: 5%;
+    max-width: 250px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.grid{
+    background-color:  #eff4f7;;
+}
+
+.grid section h2, .grid section p{
+    text-align: center;
+    line-height: 100%;
+    margin: 1% auto;
+    color: #1C425C;
+}
+
+.grid section{
+    text-align: center;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #0084a8;
+	text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.menu button {
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns:1fr;
+	margin: 0;
+	padding: 0.25rem;
+    place-items: center;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none;
+}
+
+.list
+
+.infocontainer h2 {
+	font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #1C425C;
+}
+
+.list section p,  .list section a{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color:  #1C425C;;
+}
+
+.list section a {
+    display: block;
+    color:#1C425C;
+}
+
+.list section:nth-child(even) {
+	background-color: rgb(0, 132, 168, 0.2)
 }
