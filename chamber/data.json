@@ -4,7 +4,7 @@
         "address":"48 St. 9 North , Mall Alamedas del Sinú, Montería, Córdoba",
         "phone":"+57 305 4829124",
         "url":"https://www.exito.com/",
-        "logo":"bimages/exito.png",
+        "logo":"bimages/exito.webp",
         "mlevel":"Gold"
     },
 
@@ -22,7 +22,7 @@
         "address":"Mall Buenavista Suite 133, North 6 #68-72, Montería, Córdoba",
         "phone":"+57 47851620",
         "url":"https://www.arturocalle.com/",
-        "logo":"bimages/arturocalle.png",
+        "logo":"bimages/arturocalle.webp",
         "mlevel":"Silver"
     },
 
@@ -31,7 +31,7 @@
         "address":"44st # 10-91, Mall Alamedas, Suite 94, Monteria, Córdoba",
         "phone":"+57 47851620",
         "url":"https://www.velez.com.co/",
-        "logo":"bimages/velez.png",
+        "logo":"bimages/velez.webp",
         "mlevel":"Silver"
     },
 
@@ -40,7 +40,7 @@
         "address":"69st North 14, Monteria, Córdoba",
         "phone":"+57 3104096179",
         "url":"https://www.postobon.com/",
-        "logo":"bimages/postobon.png",
+        "logo":"bimages/postobon.webp",
         "mlevel":"Gold"
     },
 
@@ -49,7 +49,7 @@
         "address":"44st # 10-9 Suite 158-159, Montería, Córdoba",
         "phone":"+57  47423995",
         "url":"https://juanvaldez.com/",
-        "logo":"bimages/jvaldez.png",
+        "logo":"bimages/jvaldez.webp",
         "mlevel":"Silver"
     },
 
@@ -58,7 +58,7 @@
         "address":"44st #10-91, Mall Alamedas, Suite 125, Montería, Córdoba",
         "phone":"+57 47909090",
         "url":"https://co.totto.com/",
-        "logo":"bimages/totto.jpg",
+        "logo":"bimages/totto.webp",
         "mlevel":"Silver"
     },
 
@@ -67,7 +67,7 @@
         "address":"32st #1-30, Montería, Córdoba",
         "phone":"+57 47913900",
         "url":"https://www.bancolombia.com/",
-        "logo":"bimages/bancolombia.png",
+        "logo":"bimages/bancolombia.webp",
         "mlevel":"Gold"
     },
 
@@ -76,7 +76,7 @@
         "address":"6 North #77-86, Montería, Córdoba",
         "phone":"+57 7861198",
         "url":"https://www.labongadelsinu.co/web/",
-        "logo":"bimages/bonga.png",
+        "logo":"bimages/bonga.webp",
         "mlevel":"Bronze"
     }  
 ]
