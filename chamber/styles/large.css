@@ -130,4 +130,16 @@
     .list section p,  .list section a{
         font-size: 1.2rem;
     }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid section{
+        max-width: 450px;
+    }
+
+    .grid img{
+        max-width: 100%;
+    }
 }

@@ -192,8 +192,12 @@
         max-width: 600px;
     }
 
+    .grid section{
+        max-width: 350px;
+    }
+
     .grid img{
-        max-width: 300px;
+        max-width: 100%;
     }
 
     .list section {
@@ -206,10 +210,10 @@
     }
 
     .list .infocontainer {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1.5fr;
+        place-items: center;
+        gap: 30px;
     }
     
     .list section p,  .list section a{
