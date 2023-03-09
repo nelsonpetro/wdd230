@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: 'Cantarell', sans-serif;
+}
+
+h1 {
+    text-shadow: 2px 2px teal;
+    font-size: 2em;
+}
+
+#widget {
+    margin: 15px;
+    max-width: 600px;
+    background-color: #C4C4C4;
+    padding: 20px;
+    box-shadow: 5px 5px teal;
+}
+
+.temp {
+    font-size: 1.5rem;
+}
+
+.icontitle {
+    font-size: 1.3rem;
+}
+
+#widget p {
+    margin: 1%;
+}
+
+h1:after {
+    margin-top: 10px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: teal;
+}
+
+body {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
