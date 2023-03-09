@@ -10,7 +10,7 @@ h1 {
 }
 
 #widget {
-    margin: 15px;
+    margin: 15px 0;
     max-width: 600px;
     background-color: #C4C4C4;
     padding: 20px;
@@ -42,4 +42,18 @@ body {
     max-width: 600px;
     text-align: center;
     margin: 0 auto;
+    padding: 15px;
+}
+
+footer{
+    font-weight: 600;
+    color: white;
+    background-color: teal;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 5px 5px #C4C4C4;
+}
+
+footer p{
+    margin: 0;
 }
