@@ -175,6 +175,7 @@ nav ul li a:hover{
     margin: 1em 0 1em 0;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
+    text-align: center;
     color: #1C425C;
 }
 
@@ -263,6 +264,18 @@ nav ul li a:hover{
     transition: all .2s ease-in-out;
 }
 
+.join .join-button a {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 1.5em;
+    padding: .3rem 2.2rem;
+    text-align: center;
+    background-color: #f36744;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 4px 4px #1C425C;
+}
+
 .join-button:hover{
     transform: scale(1.1);
 }
@@ -275,7 +288,7 @@ nav ul li a:hover{
     text-align: center;
 }
 
-.join a, .join-button-hero a{
+.join-button-hero a{
     font-family: 'Saira Condensed', sans-serif;
     font-size: 1.5em;
     padding: .5rem 2.5rem;

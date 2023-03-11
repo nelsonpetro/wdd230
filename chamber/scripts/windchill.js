@@ -5,14 +5,15 @@ const currentWeather = function() {
   }).then(data => {
     console.log(data);
       let description = document.querySelector("#description");
-      description.textContent = data.weather[0].description;
-      description.style.fontSize = "1.5em";
+      description.textContent = toTitleCase(data.weather[0].description);
+      description.style.fontSize = "1.3em";
       description.style.fontFamily = 'Montserrat';
+      description.style.fontWeight = 700;
       let icon = document.createElement("img");
       icon.setAttribute("class", "icon");
       document.querySelector(".icon-desc").appendChild(icon);
       icon.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-      document.querySelector("#temp").textContent = `${data.main.temp} °F`;
+      document.querySelector("#temp").textContent = `${data.main.temp.toFixed(0)} °F`;
       document.querySelector("#humidity").textContent = `${data.main.humidity}%`
       document.querySelector("#wspeed").textContent = `${data.wind.speed} mph`;
       let temp = data.main.temp;
@@ -25,4 +26,12 @@ const currentWeather = function() {
 
 currentWeather();
 
+function toTitleCase(str) {
+  return str.replace(
+    /([^\W_]+[^\s-]*) */g,
+    function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    }
+  );
+}
 //windchill factor f = 35.74 + (0.6215*temp) - ((35.75*(windspeed))**0.16) + ((0.4275*(windspeed))**0.16)
