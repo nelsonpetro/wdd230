@@ -62,7 +62,7 @@ header{
 }
 
 .datecontainer {
-    background-color: #0084a8;
+    background-color: #00708F;
     margin-top: 1em;
     text-align: center;
     padding: 1em;
@@ -318,18 +318,18 @@ nav ul li a:hover{
 }
 
 footer{
-    background-color: #0084a8;
+    background-color: #00708F;
     padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #eff4f7;
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
 footer a{
-    color: #eff4f7;
+    color: white;
     text-decoration: none;
 }
 
@@ -569,7 +569,7 @@ form label.top input:required:valid {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #0084a8;
+	background-color: #00708F;
 	text-align: center;
     font-family: 'Saira Condensed', sans-serif;
 }
