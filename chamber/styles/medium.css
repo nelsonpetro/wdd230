@@ -211,7 +211,7 @@
 
     .list .infocontainer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1.5fr;
+        grid-template-columns: repeat(5, 1fr);
         place-items: center;
         gap: 30px;
     }

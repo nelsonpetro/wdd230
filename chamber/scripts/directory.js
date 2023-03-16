@@ -48,12 +48,14 @@ const displayBusiness = (businesses) => {
         let name = document.createElement('h2');
         let address = document.createElement('p');
         let phone = document.createElement('p');
+        let membership = document.createElement('p');
         let url = document.createElement('a');
         let logo = document.createElement('img');
               
         name.textContent = `${business.name}`;
         address.textContent = `${business.address}`;
         phone.textContent = `${business.phone}`;
+        membership.textContent = `Membership level: ${business.mlevel}`;
         url.textContent =`${business.url}`;
         url.setAttribute('href', business.url);
         url.setAttribute('target', '_blank');
@@ -68,6 +70,7 @@ const displayBusiness = (businesses) => {
         infocontainer.appendChild(name);
         infocontainer.appendChild(address);
         infocontainer.appendChild(phone);
+        infocontainer.appendChild(membership);
         infocontainer.appendChild(url);
 
         card.appendChild(logo);
