@@ -346,6 +346,10 @@ footer .icon img{
     width: 20px;
 }
 
+.location .icon img {
+    width: 20px;
+}
+
 .h-line{
     width: 100%;
 }
@@ -426,6 +430,15 @@ form {
     font-family: 'Roboto', sans-serif;
     color: #1C425C;
     text-align: center;
+}
+
+.form-title::after {
+    margin: 10px auto;
+    content: "";
+    display: block;
+    width: 95%;
+    height: 1px;
+    background: #00708F;
 }
 
 form {
@@ -621,4 +634,27 @@ form label.top input:required:valid {
 
 .list section:nth-child(even) {
 	background-color: rgb(0, 132, 168, 0.2)
+}
+
+.contact-img img {
+    max-width: 70%;
+}
+
+.contact-img {
+    text-align: center;
+}
+
+.contact-img::after, .chamber-contact::before {
+    margin: 10px auto;
+    content: "";
+    display: block;
+    width: 95%;
+    height: 1px;
+    background: #00708F;
+}
+
+.chamber-contact {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #1C425C;;
 }

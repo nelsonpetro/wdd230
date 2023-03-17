@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/medium.css" media="only screen and (min-width: 37.5rem)">
     <link rel="stylesheet" href="styles/large.css" media="only screen and (min-width: 64rem)">
     <link rel="icon" href="images/fav-icon.ico">
-    <title>Join - Montería - Chamber of Commerce</title>
+    <title>Thank you - Montería - Chamber of Commerce</title>
 </head>
 <body>
     <div class="banner">
@@ -64,48 +64,12 @@
         <span id="currentdate"></span>
         <p><span id="days-visits"></span></p>
     </div>
-    <h1 class="form-title">Montería Chamber of Commerce - Contact Us</h1>
-    <div class="form-container">
-        <div class="contact-img">
-            <img src="images/contact.svg" alt="contact us image">
+    <div class="container">
+        <div class="message">
+            <h1>Thank you for contacting us. We will be in touch soon!</h1>
         </div>
-        <form method="get" action="thankyou-contact.html" class="contact-form">
-            <fieldset>
-                <legend>Get in touch</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Business Position<input type="text" id="pattern" name="title" minlength="7" pattern="^(?=.*[a-zA-Z])[a-zA-Z\s\-]{7,}$"></label>
-                <label class="top">Email address*<input type="email" name="email" placeholder="someone@example.com" required></label>  
-                <label class="top">Phone*<input type="tel" name="phone" placeholder="123456789" required></label>
-                <label class="top">Additional information<textarea name="bdescription" cols="33" rows="10" placeholder="Please, enter your questions here"></textarea></label>
-                <input type="hidden" name="appdate" id="appdate" value="">  
-            </fieldset>
-            <input type="submit" value="Send my Information" class="submitBtn">
-        </form>
-        <div class="chamber-contact">
-            <div class="location">
-                <h2>Visit Us</h2>
-                <p>Montería - Chamber of Commerce</p>
-                <p>28 St. No. 4-61</p>
-                <p>Córdoba, Colombia, 230001</p>
-            </div>
-            <div class="general">
-                <section>
-                    <h3>Membership</h3>
-                    <p>For questions about joining the Chamber or accessing existing member benefits, including the community calendar and member news portal, contact:</p>
-                    <p class="email">membership@monteriachamber.com</p>
-                </section>
-                <section>
-                    <h3>Economic Development/Opportunity</h3>
-                    <p>Nelson Petro Doria, Sr. VP, Economic Development</p>
-                    <p class="email">membership@monteriachamber.com</p>
-                </section>
-                <section>
-                    <h3>Sponsorship opportunitiesy</h3>
-                    <p>Nelson Petro Doria, Sr. VP, Economic Development</p>
-                    <p class="email">sponsor@monteriachamber.com</p>
-                </section>
-            </div>
+        <div class="image">
+            <img src="images/peoplecongrats.svg" alt="People celebrating picture">
         </div>
     </div>
     <footer>
@@ -136,7 +100,6 @@
         <hr class="h-line">
         <p>&copy; <span id="currentyear"></span> | Montería Chamber of Commerce | WDD 230 Project | Nelson D. Petro | Colombia | <span id="lastupdated"></span></p>     
     </footer>
-    <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/form.js" defer></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

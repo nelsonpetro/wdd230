@@ -219,5 +219,9 @@
     .list section p,  .list section a{
         font-size: 1rem;
     }
+
+    .contact-img img {
+        max-width: 50%;
+    }
 }
 

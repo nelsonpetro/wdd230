@@ -142,4 +142,39 @@
     .grid img{
         max-width: 100%;
     }
+
+    form input.submitBtn {
+        margin: 0 auto;
+    }
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-form {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 90%;
+    }
+
+    .chamber-contact {
+        grid-column: 2/3;
+    }
+
+    .contact-img {
+        grid-column: 2/3;
+    }
+
+    .chamber-contact::before {
+        background-color: white;
+    }
+
+    .contact-form label.top input, .contact-form label.top textarea {
+        max-width: 40rem;
+    }
+
+    .contact-form fieldset {
+        width: 100%;
+    }
 }
