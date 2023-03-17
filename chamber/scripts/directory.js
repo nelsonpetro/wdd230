@@ -6,35 +6,6 @@ async function getData() {
     console.log(data);
 
     displayBusiness(data);
-
-    // document.querySelector(".years").addEventListener("change", function(){
-    //     console.log(document.querySelector(".years").value);
-    //     const cards = document.querySelector(".cards");
-    //     while (cards.firstChild) {
-    //         cards.firstChild.remove();
-    //     }
-
-    //     let filteredArray;
-
-    //     switch (document.querySelector(".years").value) {
-    //         case '0':
-    //             filteredArray = data.prophets;
-    //           break;
-    //         case '1':
-    //             filteredArray = data.prophets.filter(prophet => prophet.length < 10);
-    //           break;
-    //         case '2':
-    //             filteredArray = data.prophets.filter(prophet => prophet.length >= 10 && prophet.length < 20);
-    //           break;
-    //         case '3':
-    //             filteredArray = data.prophets.filter(prophet => prophet.length >= 20 && prophet.length < 30);
-    //           break;
-    //         case '4':
-    //             filteredArray = data.prophets.filter(prophet => prophet.length >= 30);
-    //           break;
-    //     }
-    //     displayProphets(filteredArray);
-    // });
 }
   
 const displayBusiness = (businesses) => {
