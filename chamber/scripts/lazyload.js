@@ -2,7 +2,7 @@ const images = document.querySelectorAll('img[data-src]');
 
 const imgOptions = {
   rootMargin: "0px",
-  threshold: 1
+  threshold: .5
 };
 
 const preLoadImage = image => {
