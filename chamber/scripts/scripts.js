@@ -116,7 +116,29 @@ const displaySpotlight = (data) => {
 
 }
 
+// Get all the links in the nav bar
+const navLinks = document.querySelectorAll('.nav-link');
 
+// Loop through the links and add a click event listener to each one
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove the active class from all links
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+
+    // Add the active class to the clicked link
+    this.classList.add('active');
+  });
+});
+
+// Set the active class to the link corresponding to the current page
+const currentPage = window.location.href;
+navLinks.forEach(link => {
+  if (link.href === currentPage) {
+    link.classList.add('active');
+  }
+});
 
 
 

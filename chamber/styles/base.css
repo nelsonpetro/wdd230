@@ -107,6 +107,11 @@ nav ul li a:hover{
     color: #eff4f7;
 }
 
+.nav-link.active{
+    background-color: #0084a8;
+    color: white;
+}
+
 .social-media {
     margin-top: .8rem;
     display: flex;
