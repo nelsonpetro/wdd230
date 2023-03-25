@@ -132,7 +132,7 @@ nav ul li a:hover{
 }
 
 .hero {
-    background-image: url("../images/small.webp");
+    background-image: url("../images/city.webp");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -169,7 +169,7 @@ nav ul li a:hover{
 .hero h4 {
     font-size: 2em;
     margin: .5em;
-    color: #00708F;
+    color: white;
     text-shadow: 4px 4px #1C425C;
 }
 
@@ -469,7 +469,7 @@ form legend {
 form label.top, form div {
     display: block;
     padding-top: 1rem;
-    color: #f36744;
+    color: #1C425C;
     font-weight: 600;
 }
 
@@ -485,7 +485,7 @@ form label.top input, form label.top textarea {
 }
 
 form label.top {
-    color: #f36744;
+    color: #1C425C;
 }
 
 form label.top textarea {
@@ -524,8 +524,9 @@ form label.sbs:hover::before {
 
 form input.submitBtn {
     border: none;
-    background-color: #f36744;
+    background-color: #1C425C;
     color: white;
+    font-weight: 600;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
