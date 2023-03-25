@@ -170,7 +170,7 @@ nav ul li a:hover{
     font-size: 2em;
     margin: .5em;
     color: #142C3E;
-    text-shadow: 4px 4px #1C425C;
+    text-shadow: 2px 2px #1C425C;
 }
 
 .hero, .event, .news, .weather, .spotlight, .join, .demo-card, .city-card{
