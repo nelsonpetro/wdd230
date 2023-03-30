@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Montserrat', sans-serif;*/
 
 * {
     box-sizing: border-box;
@@ -7,7 +11,7 @@
 header {
     width: 100%;
     height: 80px;
-    background-color: #7FB577;
+    background-color: #3A6201;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,7 +20,7 @@ header {
 }
 
 .logo img {
-    max-width: 70px;
+    max-width: 140px;
 }
 
 .hamburger {
@@ -30,8 +34,6 @@ header {
     border: none;
     font-size: 2em;
 }
-
-
 
 .navbar ul li a {
     font-size: 1.2rem;
@@ -58,7 +60,7 @@ header {
     right: 0;
     width: 100%;
     height: 240px;
-    background-color: #7FB577;
+    background-color: #3A6201;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,4 +102,130 @@ header {
 
 .hamburger.open span:nth-child(2) {
     display: block;
+}
+
+.hero-section {
+    padding: 20px;
+    background-color: #eaeef2;
+    
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+
+.hero-text p {
+    font-family: 'Roboto', sans-serif;
+    color: #e15900;
+    text-align: center;
+    font-weight: 500;
+}
+
+.hero-text h1, .hero-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.join-button-hero {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.join-button-hero a, .join-action a {
+    padding: 6px 15px;
+    border-radius: 10px;
+    background-color: #e15900;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.join-action a {
+   background-color: #3A6201;
+   font-size: 1.4em;
+}
+
+.coastal-zones h1 {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.coastal img{
+    max-width: 100%;
+}
+
+.coastal h3, .coastal p{
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.coastal p:after, .weather h3:after, #forecast h3:after, .special-drinks h3:after{
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background: #e15900;
+    margin: 8px auto;
+}
+
+.weather h3, .weather p, .special-drinks h3, .special-drinks p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.icon-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#forecast p {
+    font-size: .8em;
+}
+
+footer {
+    background-color: #3A6201;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+.logo-footer img {
+    max-width: 200px;
+}
+
+.logo-footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.action {
+    background-image: url("../images/action-medium.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
 }
