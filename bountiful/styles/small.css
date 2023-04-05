@@ -162,7 +162,7 @@ header {
     text-align: center;
 }
 
-.coastal p:after, .weather h3:after, #forecast h3:after, .special-drinks h3:after{
+.coastal:after, .weather h3:after, #forecast h3:after, .special-drinks h3:after{
     content: "";
     display: block;
     width: 80%;
@@ -220,12 +220,211 @@ footer p {
     flex-direction: column;
 }
 
+.coastal {
+    padding: 5px;
+    border: 8px outset #005C53;
+    margin: 5px;
+    background-color: #eaeef2;;
+}
+
+#forecast-container section{
+    padding: 5px;
+    border: 4px groove #005C53;
+    margin: 5px;
+    background-color: #eaeef2;
+}
+
+#forecast p {
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (600 - 300)));
+}
+
 .action {
-    background-image: url("../images/action-medium.png");
+    background-image: url("../images/action-small.webp");
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 250px;
+    padding: 5px;
+    border: 8px outset #005C53;
+    margin: 5px;
+    background-color: #eaeef2;;
+}
+
+.img-container {
+    padding: 10px;
+    text-align: center;
+}
+
+.img-container img{
+    max-width: 300px;
+}
+
+form {
+    padding: 0 3% 3% 3%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #1C425C;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #1C425C;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #1C425C;
+    font-weight: 600;
+}
+
+form label.top input, form label.top textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #1C425C;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    background-color: #eff4f7;
+    max-width: 30rem;
+}
+
+form label.top {
+    color: #1C425C;
+}
+
+form label.top textarea {
+    margin-bottom: .75rem;
+}
+
+form label.top input[type="tel"]{
+    margin-bottom: .75rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color:#1C425C;
+    position: relative;
+    font-weight: 600;
+}
+
+form label.sbs::before {
+    display: none;
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #424242;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+form label.sbs:hover::before {
+    display: block;
+}
+
+.submitBtn {
+    border: none;
+    background-color: #e15900;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 25rem;
+}
+
+.button-cont {
+    text-align: center;
+}
+
+form label.top input:required {
+    background-color: rgb(255, 0, 0, 0.2);
+}
+
+form label.top input:required:valid {
+    background-color: rgb(0, 255, 0, 0.2);
+}
+
+.select-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-container label {
+    padding: 8px;
+}
+
+.orderSec {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 5px;
+    border: 8px outset #005C53;
+    margin: 5px;
+    background-color: #eaeef2;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.embed-map {
+    text-align: center;
+}
+
+.map h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.history, .bf-history {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.history {
+    padding: 10px;
+}
+
+.history img {
+    max-width: 100%;
+}
+
+.map h2:after, .contact h2:after, .history h2:after, .bf-history h2:after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background: #e15900;
+    margin: 8px auto;
+}
+
+.bf-history img {
+    max-width: 100%;
+}
+
+.bf-history {
+    padding: 10px;
 }

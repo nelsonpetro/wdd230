@@ -43,6 +43,10 @@
             "weather weather drinks";
     }
 
+    .hero-img img {
+        max-width: 700px;
+    }
+
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -69,7 +73,7 @@
     }
 
     #forecast p {
-        font-size: calc(8px + (11 - 8) * ((100vw - 1024px) / (1200 - 1024)));
+        font-size: calc(12px + (14 - 12) * ((100vw - 1024px) / (1200 - 1024)));
     }
 
     #forecast-container {
@@ -78,7 +82,7 @@
         gap: 40px;
     }
 
-    .coastal p:after {
+    .coastal:after {
         display: none;
     }
 
@@ -90,4 +94,66 @@
         background: #e15900;
         margin: 8px auto;
     }
+
+    .fresh-content {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "form img"
+            "form order"
+            "form order";
+    }
+
+    .img-container {
+        grid-area: img;
+    }
+
+    .img-container img{
+        max-width: 700px;
+    }
+
+    form {
+        grid-area: form;
+        margin: 0;
+    }
+
+    .orderInfo {
+        grid-area: order;
+    }
+
+    .about-content {
+        margin: 10px auto;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "map contact"
+            "history bf-history"
+            "form form";
+        padding: 5px;
+        border: 4px groove #005C53;
+        background-color: #eaeef2;
+    }
+
+    .embed-map {
+        grid-area: map;
+    }
+
+    .contact {
+        grid-area: contact;
+    }
+
+    .history {
+        grid-area: history;
+    }
+
+    .bf-history {
+        grid-area: bf-history;
+    }
+
+    .action {
+        background-image: url("../images/action-large.webp");
+    }
+
 }
