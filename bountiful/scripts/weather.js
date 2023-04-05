@@ -11,7 +11,6 @@ const currentWeather = function() {
         icon.setAttribute("alt", "current weather icon");
         document.querySelector(".icon-desc").appendChild(icon);
         icon.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-        document.querySelector("#w-name").textContent = `Weather in ${data.name}`
         document.querySelector("#temp").textContent = `${data.main.temp.toFixed(0)} °F`;
         document.querySelector("#humidity").textContent = `${data.main.humidity}%`
         document.querySelector("#wspeed").textContent = `${data.wind.speed} mph`;

@@ -63,7 +63,7 @@
 
     .weather {
         grid-area: weather;
-        align-items: self;
+        align-items: center;
     }
 
     .action {
