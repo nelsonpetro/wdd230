@@ -110,6 +110,10 @@ header {
     
 }
 
+.hero-img {
+    text-align: center;
+}
+
 .hero-img img {
     max-width: 100%;
 }
@@ -148,6 +152,10 @@ header {
 .coastal-zones h1 {
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.coastal {
     text-align: center;
 }
 
@@ -261,6 +269,16 @@ footer p {
     max-width: 300px;
 }
 
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social img {
+    width: 20px;
+}
+
 form {
     padding: 0 3% 3% 3%;
     margin: 0 auto;
@@ -348,6 +366,7 @@ form label.sbs:hover::before {
     margin: 0 auto;
     width: 95%;
     max-width: 25rem;
+    cursor: pointer;
 }
 
 .button-cont {

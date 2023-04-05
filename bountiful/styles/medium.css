@@ -94,5 +94,15 @@
     .action {
         background-image: url("../images/action-medium.webp");
     }
+
+    .submitBtn, .join-action, .join-button-hero {
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+    }
+      
+    .submitBtn:hover, .join-action:hover, .join-button-hero:hover {
+        transform: scale(1.1);
+    }
+
     
 }

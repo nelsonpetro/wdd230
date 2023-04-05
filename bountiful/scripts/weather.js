@@ -40,7 +40,20 @@ const weatherForecast = function() {
         icon.setAttribute("class", "icon");
         icon.setAttribute("alt", "current weather icon");
         descIcon.setAttribute("class", "iconContainer");
-        day.innerHTML = `<strong>Date: </strong>${data.list[i].dt_txt.split(" ")[0]}`;
+        console.log(data.list[i].dt_txt.split(" ")[0]);
+        try {
+          const options = {
+            timeZone: 'America/Los_Angeles',
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+          };
+          day.innerHTML = `<span class="highlight">${new Date(data.list[i].dt_txt).toLocaleDateString("en-US", options)}</span>`;
+        } catch (e) {
+          console.log("Error with code or your browser does not support Locale");
+        }
+
         time.innerHTML = `<strong>Time: </strong>${data.list[i].dt_txt.split(" ")[1]}`;
         temp.innerHTML = `<strong>Temperature: </strong>${data.list[i].main.temp.toFixed(0)} °F`
         description.innerHTML = `<strong>Description: </strong>${toTitleCase(data.list[i].weather[0].description)}`
