@@ -21,7 +21,7 @@
         align-self: center;
     }
 
-    .hero-text h1, .coastal-zones h1 {
+    .hero-text h2, .coastal-zones h1 {
         font-size: calc(24px + (40 - 24) * ((100vw - 600px) / (1024 - 600)));
     }
 
@@ -95,12 +95,12 @@
         background-image: url("../images/action-medium.webp");
     }
 
-    .submitBtn, .join-action, .join-button-hero {
+    .submitBtn, .join-action, .join-button-hero, footer .icons p img, .header-media a img, footer .social-media img:hover{
         transform: scale(1);
         transition: all 0.2s ease-in-out;
     }
       
-    .submitBtn:hover, .join-action:hover, .join-button-hero:hover {
+    .submitBtn:hover, .join-action:hover, .join-button-hero:hover, footer .icons p img:hover, .header-media a img:hover, footer .social-media img:hover{
         transform: scale(1.1);
     }
 

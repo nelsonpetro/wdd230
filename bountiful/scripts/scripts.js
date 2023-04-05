@@ -18,3 +18,21 @@ document.querySelector("#lastupdated").innerHTML = `<span class="highlight">Last
 }catch (e) {
 	console.log("Error with code or your browser does not support Locale");
 }
+
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});
+
+const currentPage = window.location.href;
+navLinks.forEach(link => {
+  if (link.href === currentPage) {
+    link.classList.add('active');
+  }
+});

@@ -39,8 +39,11 @@ header {
     font-size: 1.2rem;
     display: block;
     padding: 10px 25px;
-    color: white;
     text-decoration: none;
+}
+
+.nav-link {
+    color: white;
 }
 
 .social {
@@ -125,7 +128,7 @@ header {
     font-weight: 500;
 }
 
-.hero-text h1, .hero-text h3 {
+.hero-text h2, .hero-text h3 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -197,6 +200,10 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+
+.icons p{
+    margin: 10px;
 }
 
 #forecast p {
@@ -446,4 +453,10 @@ form label.top input:required:valid {
 
 .bf-history {
     padding: 10px;
+}
+
+.active {
+    background-color: white;
+    color: #3A6201;
+    font-weight: 600;
 }
