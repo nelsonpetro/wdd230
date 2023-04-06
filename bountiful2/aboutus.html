@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="styles/medium.css" media="only screen and (min-width: 37.5rem)">
     <link rel="stylesheet" href="styles/large.css" media="only screen and (min-width: 64rem)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logo-ico.ico">
-    <title>Fresh Drink</title>
+    <title>Document</title>
 </head>
 <body>
     <header>
@@ -54,57 +53,55 @@
         </nav>
     </header>
     <main>
-        <div class="fresh-content">
-            <div class="img-container">
+        <div class="about-content">
+            <section class="map">
+                <h2>Visit Us!</h2>
+                <div class="embed-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.2940449694092!2d-117.25579208444896!3d33.12763877333123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc74bcf030a813%3A0x19970514ce7ef203!2s2668%20Gateway%20Rd%2C%20Carlsbad%2C%20CA%2092009%2C%20USA!5e0!3m2!1sen!2sco!4v1680662568014!5m2!1sen!2sco" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <section class="contact">
+                <h2>Contact Information</h2>
+                <h3>For wholesale buyers</h3>
+                <p><strong>Wholesales Manager: </strong> Nelson Petro</p>
+                <p>nelsonpetro@bountifulfoods.com</p>
+                <h3>For Recipe Development and Testing</h3>
+                <p><strong>Recipes Manager: </strong>Josh Peterson</p>
+                <p>joshpeterson@bountifulfoods.com</p>
+            </section>
+            <section class="history">
+                <h2>Carlsbad History</h2>
                 <img
-                    class="drink-img"
                     src="images/placeholder300x400.webp" 
                     data-src="images/placeholder300x400.webp"
-                    data-srcset="images/fresh-banner-small.webp 500w,
-                                images/fresh-banner-medium.webp 800w,
-                                images/fresh-banner-large.webp 1024w"
+                    data-srcset="images/carlsbad-small.webp 500w,
+                                images/carlsbad-medium.webp  800w,
+                                images/carlsbad-large.webp  1024w"
                     sizes="(max-width: 37.5rem) 500px, (max-width: 64rem) 800px, (min-width: 64rem) 1200px"
-                    alt="Fruits with ice picture"
+                    alt="Carlsbad place at afternoon image"
                 >
-            </div>
+                <p>Carlsbad, city, San Diego county, southern California, U.S. Located 35 miles (55 km) north of San Diego, Carlsbad lies along a lagoon on the Pacific Ocean just south of Oceanside, in a winter vegetable- and flower-growing district. Luiseño Indians long inhabited the location before Spanish settlement in the 18th century. Founded as a cattle station located along the Spanish Camino Real (royal highway) and settled by Anglo ranchers in the late 1860s, it was first called Frazier’s Station but was renamed (1883) when its mineral waters were found to be similar to those of Karlsbad in Bohemia (now Karlovy Vary, Czech Republic). After the arrival (1885) of the Santa Fe Railway, the city’s fine beaches spurred its development as a popular health resort and vacation destination.</p>
+            </section>
+            <section class="bf-history">
+                <h2>Bountiful Foods History</h2>
+                <img src="images/logo-green.png" alt="bountiful foods logo green" loading="lazy">
+                <p>Nelson was a Colombian immigrant who came to the United States in search of a better life. He was passionate about healthy living and had always dreamed of starting his own health food business. In 2010, Nelson decided to turn his dream into a reality and founded Bountiful Foods in Carlsbad, California. With his Colombian background and love for fresh and organic produce, he saw an opportunity to create a business that would not only promote healthy eating but also celebrate the flavors and ingredients of his homeland.</p>
+                <p>Nelson started small, with a small juice bar offering fresh and natural juices and smoothies made from local fruits and vegetables. He quickly gained a loyal following in the community who appreciated his commitment to quality and authenticity.</p>
+                <p>Today, Bountiful Foods has multiple locations throughout California and has become a staple in the health food industry. Nelson's vision and dedication have created a legacy that will continue to inspire and nourish generations to come.</p>
+            </section>
             <form>
                 <fieldset>
-                    <legend>Your info</legend>
-                    <label class="top">First Name*<input type="text" name="fname" id="fname" required></label>
-                    <label class="top">Email address*<input type="email" name="email" id="email" placeholder="someone@example.com" required></label>  
-                    <label class="top">Phone*<input type="tel" name="phone" placeholder="123456789" id="phone" required></label>  
-                </fieldset>
-                <fieldset>
-                    <legend>Create your drink!</legend>
-                    <div class="select-container">
-                        <label for="fruit1">
-                            Select the first fruit!
-                            <select name="fruit1" id="fruit1">
-                                <option value="" disabled selected>Select a fruit</option>
-                            </select>
-                        </label>
-                        <label for="fruit2">
-                            Select the second fruit!
-                            <select name="fruit2" id="fruit2">
-                                <option value="" disabled selected>Select a fruit</option>
-                            </select>
-                        </label>
-                        <label for="fruit3">
-                            Select the third fruit!
-                            <select name="fruit3" id="fruit3">
-                                <option value="" disabled selected>Select a fruit</option>
-                            </select>
-                        </label>
-                    </div>
-                    <label class="top">Additional details? It is your drink! <textarea id="instructions" name="bdescription" cols="33" rows="10" placeholder="Let us make a drink especially for you!"></textarea></label>
+                    <legend>Get in touch</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Email address*<input type="email" name="email" placeholder="someone@example.com" required></label>  
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="123456789" required></label>
+                    <label class="top">Additional information<textarea name="bdescription" cols="33" rows="10" placeholder="Please, enter your questions here"></textarea></label>
+                    <input type="hidden" name="appdate" id="appdate" value="">  
                 </fieldset>
                 <div class="button-cont">
-                    <button class="submitBtn">Create my drink!</button>
+                    <button class="submitBtn">Contact me!</button>
                 </div>
-                
             </form>
-            <div class="orderInfo">
-            </div>
         </div>
     </main>
     <footer>

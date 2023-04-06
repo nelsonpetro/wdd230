@@ -31,6 +31,7 @@ const weatherForecast = function() {
       for(let i = 4; i <= 20; i+=8){
         let forecast = document.createElement("section");
         let day = document.createElement("p");
+        let time = document.createElement("p");
         let temp = document.createElement("p");
         let description = document.createElement("p");
         let icon = document.createElement("img");
@@ -52,10 +53,12 @@ const weatherForecast = function() {
           console.log("Error with code or your browser does not support Locale");
         }
 
+        time.innerHTML = `<strong>Time: </strong>${data.list[i].dt_txt.split(" ")[1]}`;
         temp.innerHTML = `<strong>Temperature: </strong>${data.list[i].main.temp.toFixed(0)} °F`
         description.innerHTML = `<strong>Description: </strong>${toTitleCase(data.list[i].weather[0].description)}`
         icon.src = `http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`; 
         forecast.appendChild(day);
+        forecast.appendChild(time);
         forecast.appendChild(temp);
         descIcon.appendChild(description);
         descIcon.appendChild(icon);

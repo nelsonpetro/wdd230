@@ -239,7 +239,7 @@ footer p {
     padding: 5px;
     border: 8px outset #005C53;
     margin: 5px;
-    background-color: #eaeef2;
+    background-color: #eaeef2;;
 }
 
 #forecast-container section{
@@ -459,24 +459,4 @@ form label.top input:required:valid {
     background-color: white;
     color: #3A6201;
     font-weight: 600;
-}
-
-.map-img img{
-    width: 350px;
-    height: 350px;
-    padding: 5px;
-    border: 8px outset #005C53;
-    margin: 5px;
-    background-color: #eaeef2;
-}
-
-.history img {
-    padding: 5px;
-    border: 8px outset #005C53;
-    margin: 5px;
-    background-color: #eaeef2;
-}
-
-.map-img{
-    text-align: center;
 }

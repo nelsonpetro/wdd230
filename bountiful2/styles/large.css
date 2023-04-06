@@ -1,0 +1,159 @@
+@media only screen and (min-width: 64rem){
+    header {
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .navbar ul {
+        display: flex;
+        margin: 0;
+        list-style: none;
+    }
+
+    .navbar ul li{
+        padding: 0 30px;
+    }
+
+    .navbar ul .social-media {
+        display: flex;
+        flex-direction: row;
+        margin-right: 40%; 
+    }
+
+    header .logo{
+        margin-left: 50px;
+    }
+
+    .content {
+        padding: 20px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "coastal coastal coastal"
+            "weather weather action"
+            "weather weather drinks";
+    }
+
+    .hero-img img {
+        max-width: 700px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .coastal img {
+        max-width: 300px;
+    }
+
+    .coastal.card3 {
+        display: block;
+        grid-column: 3/4;
+        text-align: center;
+    }
+
+    .coastal.card1 {
+        grid-column: 1/2;
+        text-align: center;
+    }
+
+    .coastal.card2 {
+        grid-column: 2/3;
+        text-align: center;
+    }
+
+    #forecast p {
+        font-size: calc(12px + (14 - 12) * ((100vw - 1024px) / (1200 - 1024)));
+    }
+
+    #forecast-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .coastal:after {
+        display: none;
+    }
+
+    .coastal-zones:after {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 1px;
+        background: #e15900;
+        margin: 8px auto;
+    }
+
+    .fresh-content {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "form img"
+            "form order"
+            "form order";
+    }
+
+    .img-container {
+        grid-area: img;
+    }
+
+    .img-container img{
+        max-width: 700px;
+    }
+
+    form {
+        grid-area: form;
+        margin: 0;
+    }
+
+    .orderInfo {
+        grid-area: order;
+    }
+
+    .about-content {
+        margin: 10px auto;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "map contact"
+            "history bf-history"
+            "form form";
+        padding: 5px;
+        border: 4px groove #005C53;
+        background-color: #eaeef2;
+    }
+
+    .embed-map {
+        grid-area: map;
+    }
+
+    .contact {
+        grid-area: contact;
+    }
+
+    .history {
+        grid-area: history;
+    }
+
+    .bf-history {
+        grid-area: bf-history;
+    }
+
+    .action {
+        background-image: url("../images/action-large.webp");
+    }
+
+}
