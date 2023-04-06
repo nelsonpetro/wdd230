@@ -50,7 +50,7 @@ fruits().then(() => {
     const phone = document.querySelector("#phone").value;
     const instructions = document.querySelector("#instructions").value;
 
-    if (!fname || !email || !phone) {
+    if (!fname || !email || !phone || (selectedFruits.length < 3)) {
       alert("Please fill out the required fields!");
       return;
     }
