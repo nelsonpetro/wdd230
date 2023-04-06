@@ -141,7 +141,7 @@ header {
 .join-button-hero a, .join-action a {
     padding: 6px 15px;
     border-radius: 10px;
-    background-color: #e15900;
+    background-color: #b34400;
     color: white;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -365,7 +365,7 @@ form label.sbs:hover::before {
 
 .submitBtn {
     border: none;
-    background-color: #e15900;
+    background-color: #b34400;
     color: white;
     font-weight: 600;
     border-radius: 1rem;
